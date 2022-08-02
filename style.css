@@ -31,6 +31,7 @@ body {
     margin-top: 50px;
     text-align: center;
 }
+
 #conteudo h2 {
     background-color: aliceblue;
 }
@@ -61,4 +62,20 @@ body {
 
 #red {
     background-color: red;
+}
+
+#pixel-board {
+    width: 310px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.pixel {
+    border: solid 1px black;
+    background-color: white;
+    width: 60px;
+    height: 60px;
+    margin: auto;
+    display: inline-block;
+    vertical-align: -4px;
 }
