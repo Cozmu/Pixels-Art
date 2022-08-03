@@ -7,6 +7,8 @@ body {
     position: absolute;
     width: 100%;
     height: 100%;
+    color: white;
+    background-color: #dad7cd;
 }
 
 #cabecalho {
@@ -14,14 +16,14 @@ body {
     margin-top: 0;
     position: fixed;
     z-index: 10;
-    background-color: black;
+    background-color: #344e41;
 }
 
 #title {
     text-align: center;
     color: white;
 }
-
+/*-----------------------------------------------------------------------------------------------------------------------*/
 #conteudo {
     position: relative;
     z-index: 1;
@@ -30,14 +32,16 @@ body {
     margin-right: 15%;
     margin-top: 50px;
     text-align: center;
+    background-color: #588157;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
 }
-
-#conteudo h2 {
-    background-color: aliceblue;
-}
-
+/*-----------------------------------------------------------------------------------------------------------------------*/
 #color-palette {
-    background-color: aliceblue;
+    margin-left: 10%;
+    margin-right: 10%;
+    border-radius: 5px;
+    background-color: #a3b18a;
 }
 
 .color {
@@ -63,7 +67,7 @@ body {
 #red {
     background-color: red;
 }
-
+/*-----------------------------------------------------------------------------------------------------------------------*/
 #pixel-board {
     width: 210px;
     margin-left: auto;
