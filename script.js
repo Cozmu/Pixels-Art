@@ -14,14 +14,30 @@ let receptorBlue = document.querySelectorAll('.color')[1]
 let receptorGreen = document.querySelectorAll('.color')[2]
 let receptorRed = document.querySelectorAll('.color')[3]
 
+/* let receptor = document.querySelector('.color') */
+
 function seleciona(event) {
-    let selecionado = document.querySelector('.selected')
-    selecionado.classList.remove('selected')
-    event.target.classList.add('selected')
+    /* for (let index = 0; index < receptor.length; index += 1) { */
+        let selecionado = document.querySelector('.selected')
+        selecionado.classList.remove('selected')
+        event.target.classList.add('selected')
+   /*  } */
 
 }
+/* receptor.addEventListener('click', seleciona); */
 
 receptorBlack.addEventListener('click', seleciona);
 receptorBlue.addEventListener('click', seleciona);
 receptorGreen.addEventListener('click', seleciona);
-receptorRed.addEventListener('click', seleciona);
+receptorRed.addEventListener('click', seleciona); 
+//-------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
