@@ -8,6 +8,7 @@ function criaTabela() {
     }
 }
 criaTabela();
+
 //-------------------------------------------------------------
 function pintarModelos() {
     let modelos = document.querySelectorAll('.color')
@@ -18,7 +19,7 @@ function pintarModelos() {
             modelos[index].style.backgroundColor = 'blue';
         } else if (modelos[index] === modelos[2]) {
             modelos[index].style.backgroundColor = 'green';
-        } else {
+        } else if (modelos[index] === modelos[3]) {
             modelos[index].style.backgroundColor = 'red';
         }
     }
@@ -26,33 +27,51 @@ function pintarModelos() {
 pintarModelos();
 
 //--------------------------------------------------------------
-let receptorBlack = document.querySelectorAll('.color')[0]
-let receptorBlue = document.querySelectorAll('.color')[1]
-let receptorGreen = document.querySelectorAll('.color')[2]
-let receptorRed = document.querySelectorAll('.color')[3]
-/* let receptor = document.querySelector('.color') */
+function selecionar(muda) {
+    let receptor = document.querySelectorAll('.color');
+    for (let index = 0; index < receptor.length; index += 1) {
+        let selecionado = document.querySelector('.selected');
+        if (selecionado === receptor[index]) {
+            selecionado.classList.remove('selected');
+            muda.target.classList.add('selected');
+        }
+    }
+}
 
-function seleciona(event) {
-    /* for (let index = 0; index < receptor.length; index += 1) { */
-    let selecionado = document.querySelector('.selected')
-    selecionado.classList.remove('selected')
-    event.target.classList.add('selected')
-    /*  } */
+let receptor = document.querySelectorAll('.color')
+for (let index = 0; index < receptor.length; index += 1) {
+    receptor[index].addEventListener('click', selecionar)
 
 }
-/* receptor.addEventListener('click', seleciona); */
 
-receptorBlack.addEventListener('click', seleciona);
-receptorBlue.addEventListener('click', seleciona);
-receptorGreen.addEventListener('click', seleciona);
-receptorRed.addEventListener('click', seleciona);
 //-------------------------------------------------------------
+function igualar() {
+    let pincel = document.querySelector('.selected');
+    let cor = document.querySelectorAll('.color');
+    for (let index = 0; index < cor.length; index += 1) {
+        if (pincel === cor[index]) {
+            pincel.style.backgroundColor = cor[index].style.backgroundColor;
+        }
+    }
+}
+igualar()
+
+//-------------------------------------------------------------
+function pintar(event) {
+ event.target.classList.add('selected')
+ event.target.style.backgroundColor.document.getElementsByTagName('div');
 
 
+    /* pinta.target.classList.add('amarelo');
+    pinta.target.style.backgroundColor = 'yellow'; */
+}
 
 
-
-
+let pixel = document.querySelectorAll('.pixel')
+for (let index = 0; index < pixel.length; index +=1) {
+    pixel[index].addEventListener('click', pintar)
+    
+}
 
 
 
