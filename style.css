@@ -52,21 +52,6 @@ body {
     margin: 10px 0px 10px 0px;
 }
 
-#black {
-    background-color: black;
-}
-
-#blue {
-    background-color: blue;
-}
-
-#green {
-    background-color: green;
-}
-
-#red {
-    background-color: red;
-}
 /*-----------------------------------------------------------------------------------------------------------------------*/
 #pixel-board {
     width: 210px;
