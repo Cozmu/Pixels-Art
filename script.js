@@ -1,4 +1,12 @@
 
+
+
+
+
+
+
+
+
 function criaTabela() {
     let paiTabela = document.getElementById('pixel-board');
     for (let index = 1; index <= 25; index += 1) {
@@ -65,4 +73,4 @@ function reset (event) {
 
 let botao = document.getElementById('clear-board')
 botao.addEventListener('click', reset)
-
+//---------------------------------------------------------------
