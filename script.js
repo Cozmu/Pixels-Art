@@ -1,4 +1,4 @@
-
+let imputNumber = document.getElementById('board-size');
 
 
 
