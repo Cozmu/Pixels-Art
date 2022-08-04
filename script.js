@@ -58,20 +58,19 @@ igualar()
 
 //-------------------------------------------------------------
 function pintar(event) {
- event.target.classList.add('selected')
- event.target.style.backgroundColor.document.getElementsByTagName('div');
-
-
-    /* pinta.target.classList.add('amarelo');
-    pinta.target.style.backgroundColor = 'yellow'; */
+    let corArmazenada = document.getElementsByClassName('selected')[0]
+    console.log(corArmazenada);
+    event.target.style.backgroundColor = corArmazenada.style.backgroundColor;
+    console.log(corArmazenada.style.backgroundColor );
 }
 
 
 let pixel = document.querySelectorAll('.pixel')
-for (let index = 0; index < pixel.length; index +=1) {
+for (let index = 0; index < pixel.length; index += 1) {
     pixel[index].addEventListener('click', pintar)
-    
+
 }
+//-------------------------------------------------------------
 
 
 
