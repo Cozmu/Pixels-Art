@@ -45,33 +45,24 @@ for (let index = 0; index < receptor.length; index += 1) {
 }
 
 //-------------------------------------------------------------
-function igualar() {
-    let pincel = document.querySelector('.selected');
-    let cor = document.querySelectorAll('.color');
-    for (let index = 0; index < cor.length; index += 1) {
-        if (pincel === cor[index]) {
-            pincel.style.backgroundColor = cor[index].style.backgroundColor;
-        }
-    }
-}
-igualar()
-
-//-------------------------------------------------------------
 function pintar(event) {
     let corArmazenada = document.getElementsByClassName('selected')[0]
-    console.log(corArmazenada);
     event.target.style.backgroundColor = corArmazenada.style.backgroundColor;
-    console.log(corArmazenada.style.backgroundColor );
 }
 
 
 let pixel = document.querySelectorAll('.pixel')
 for (let index = 0; index < pixel.length; index += 1) {
     pixel[index].addEventListener('click', pintar)
-
 }
 //-------------------------------------------------------------
+function reset (event) {
+    let pixel = document.querySelectorAll('.pixel')
+    for (let index = 0; index < pixel.length; index += 1) {
+        pixel[index].style.backgroundColor = 'white';
+    }
+}
 
-
-
+let botao = document.getElementById('clear-board')
+botao.addEventListener('click', reset)
 
