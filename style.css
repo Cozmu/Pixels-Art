@@ -88,3 +88,7 @@ body {
   display: inline-block;
   vertical-align: -4px;
 }
+
+.form-container {
+  display: none;
+}
