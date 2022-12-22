@@ -1,6 +1,6 @@
 # Seja bem-vindo ao projeto Pixels Art!! 🎨🖌️
 
-#### Esse projeto tem como objetivo propor uma tela de pixel arte onde o usuário pode selecionar uma das cores disponiveis na tabela e pintar a tela do modo que desejar, tendo também as opções de limpar a tela e escolher o tamanho da mesma.
+#### Esse projeto tem como objetivo propor uma tela de pixel arte onde o usuário pode selecionar uma das cores disponiveis na tabela e pintar a tela do modo que desejar, tendo também a opção de limpar a tela.
 
 <div style="margin-top:15px">
   <img alt="exibição do projeto" src="cap.png">
