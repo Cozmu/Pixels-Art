@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  font-family: ' Josefin Sans', sans-serif;
 }
 
 body {
@@ -9,7 +10,6 @@ body {
   height: 100%;
   color: white;
   background-color: #dad7cd;
-  font-family: ' Josefin Sans', sans-serif;
 }
 
 #cabecalho {
@@ -91,4 +91,16 @@ body {
 
 .form-container {
   display: none;
+}
+
+
+button {
+  height: 40px;
+  padding: 5px;
+  font-weight: 600;
+  border-radius: 5px;
+  border: none;
+  background-color: #a3b18a;
+  color: white;
+  cursor: pointer;
 }
